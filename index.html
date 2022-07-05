@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="fixed-banner" id="fixed">
+        <h1>ITZY</h1>
+    </div>
+    <div class="desktop-content">
+        <div class="background-left">
+            <!-- <img src="./images/loona.jpg"> -->
+        </div>
+        <div class="content">
+            <div class="header">
+                <p>This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                </p>
+                <p>Sign up <em>now</em> to get started.</p>
+            </div>
+            <div class="content-form">
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>Let's do This!</legend>
+                        <div class="desktop-form-row">
+                            <div class="form-row">
+                                <label for="first-name">FIRST NAME</label>
+                                <input id="first-name" type="text" name="first-name">
+                                <span></span>
+                            </div>
+                            <div class="form-row">
+                                <label for="last-name">LAST NAME</label>
+                                <input id="last-name" type="text" name="last-name">
+                            </div>
+                        </div>
+                        <div class="desktop-form-row">
+                            <div class="form-row">
+                                <label for="user-email">EMAIL</label>
+                                <input id="user-email" type="email" name="user-email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+                                <span></span>
+                            </div>
+                            <div class="form-row">
+                                <label for="user-phone">PHONE NUMBER</label>
+                                <input id="user-phone" type="tel" name="user-phone" pattern="((^(\+)(\d){12}$)|(^\d{11}$))">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="desktop-form-row">
+                            <div class="form-row">
+                                <label for="user-password">PASSWORD</label>
+                                <input id="user-password" type="password" name="user-password">
+                            </div>
+                            <div class="form-row">
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <input id="confirm-passworde" type="password" name="confirm-password">
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                </form>
+            </div>
+            <div class="form-submit">
+                <button>Create Account</button>
+            </div>
+            <div class="log-in">
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
