@@ -11,21 +11,25 @@
 </head>
 <body>
     <div class="fixed-banner" id="fixed">
-        <h1>ITZY</h1>
+        <div class="desktop-banner">
+            <h1>MUNEY</h1>
+        </div>
     </div>
     <div class="desktop-content">
         <div class="background-left">
-            <!-- <img src="./images/loona.jpg"> -->
+            <div class="desktop-banner">
+                <h1>MUNEY</h1>
+            </div>
         </div>
         <div class="content">
             <div class="header">
-                <p>This is not a real online service! You know you need something
+                <p>This is not a real online service! You know you need something <br>
                     like this in your life to help you realize your deepest dreams.
                 </p>
                 <p>Sign up <em>now</em> to get started.</p>
             </div>
             <div class="content-form">
-                <form action="" method="post">
+                <form action="#" id="myForm">
                     <fieldset>
                         <legend>Let's do This! (Fields with <span class="required-sym">*</span> are required)</legend>
                         <div class="desktop-form-row">
@@ -42,7 +46,7 @@
                         <div class="desktop-form-row">
                             <div class="form-row">
                                 <label for="user-email">EMAIL <span class="required-sym">*</span></label>
-                                <input id="user-email" type="email" name="user-email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" placeholder="google@google.com">
+                                <input required id="user-email" type="email" name="user-email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" placeholder="google@google.com">
                                 <span></span>
                             </div>
                             <div class="form-row">
@@ -54,12 +58,12 @@
                         <div class="desktop-form-row">
                             <div class="form-row">
                                 <label for="user-password">PASSWORD <span class="required-sym">*</span></label>
-                                <input id="user-password" type="password" name="user-password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$">
+                                <input required id="user-password" type="password" name="user-password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$">
                                 <span></span>
                             </div>
                             <div class="form-row">
                                 <label for="confirm-password">CONFIRM PASSWORD <span class="required-sym">*</span></label>
-                                <input id="confirm-password" type="password" name="confirm-password" onkeyup="confirmPassword()">
+                                <input required id="confirm-password" type="password" name="confirm-password" onkeyup="confirmPassword()">
                                 <span class="to-confirm"></span>
                             </div>
                         </div>
@@ -68,7 +72,7 @@
                 </form>
             </div>
             <div class="form-submit">
-                <button>Create Account</button>
+                <input type="submit" form="myForm" value="Create Account">
             </div>
             <div class="log-in">
                 <p>Already have an account? <a href="#">Log in</a></p>

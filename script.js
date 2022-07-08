@@ -35,7 +35,7 @@ function confirmPassword() {
         textAlert.textContent = ""
     }
     else {
-        confirm.setCustomValidity("Invalid field.");
+        confirm.setCustomValidity("Password does not match.");
         confirm.classList.remove("right-password");
         confirm.classList.add("wrong-password");
         textAlert.textContent = "Passwords do not match."
